@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>PizzaFinder | Matheus Forim | Davi Tavares</title>
     <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <h1>PizzaFinder</h1>
         </div>
         <ul>
-            <a href="#inicio">Inicio</a>
+            <a href="#Inicio">Inicio</a>
             <a href="#Sobre">Sobre nós</a>
             <a href="Cardapios">Cardapios</a>
             <a href="#Contatos">Contatos</a>
@@ -31,6 +32,33 @@
     </div>
 </section>
 
+<h1>Criação de Cardápio</h1>
+  
+<div class="form-container">
+  <h2>Adicionar Novo Produto</h2>
+  <form id="productForm">
+    <label for="productName">Nome do Produto:</label>
+    <input type="text" id="productName" required>
+
+    <label for="productDesc">Descrição:</label>
+    <textarea id="productDesc" required></textarea>
+
+    <label for="productPrice">Preço:</label>
+    <input type="text" id="productPrice" required>
+
+    <label for="productImage">Imagem (URL):</label>
+    <input type="url" id="productImage" required>
+
+    <button type="submit">Adicionar ao Cardápio</button>
+  </form>
+</div>
+
+<div class="menu-container">
+  <h2>Cardápio</h2>
+  <div id="menu"></div>
+</div>
+
+
 <section id="Sobre">
     <h2>Sobre nós:</h2>
     <p>O PizzaFinder, desenvolvido por Matheus Forim e Davi Tavares, é uma plataforma inovadora projetada para reunir em um único espaço as melhores opções de cardápios de pizzarias. O site foi criado com o objetivo de simplificar a vida dos apaixonados por pizza, tornando a busca por sabores e promoções mais prática e eficiente. Com uma interface amigável e intuitiva, o PizzaFinder permite que os usuários explorem uma variedade de opções de pizzas, comparem ingredientes, descubram combinações exclusivas e aproveitem as ofertas mais atraentes da região.
@@ -38,8 +66,6 @@
         Além de ser uma ferramenta útil para encontrar a pizza perfeita para qualquer ocasião, o PizzaFinder também oferece informações detalhadas sobre as pizzarias, como horário de funcionamento, métodos de entrega, e avaliações de clientes. Quer você esteja planejando um jantar romântico, uma reunião de amigos ou apenas satisfazendo uma vontade de pizza, o PizzaFinder está aqui para tornar a sua escolha mais rápida e deliciosa.</p>
 </section>
 
-<section id="Cardapios">
-    <h1>Cardapios</h1>
-</section>
+<script src="js/script.js"></script>
 </body>
 </html>
