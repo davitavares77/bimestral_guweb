@@ -2,70 +2,108 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>PizzaFinder | Matheus Forim | Davi Tavares</title>
     <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img url="https://w7.pngwing.com/pngs/177/154/png-transparent-pizza-cheese-cartoon-animated-film-pizza-angle-cartoon-cartoon-pizza.png">
-            <h1>PizzaFinder</h1>
-        </div>
-        <ul>
-            <a href="#Inicio">Inicio</a>
-            <a href="#Sobre">Sobre nós</a>
-            <a href="Cardapios">Cardapios</a>
-            <a href="#Contatos">Contatos</a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-        </ul>
+        <nav>
+            <a class="logo" href="/">PIZZA FINDER</a>
+            <div class="menu-mobile">
+              <div class="linha1"></div>
+              <div class="linha2"></div>
+              <div class="linha3"></div>
+            </div>
+            <ul class="lista-nav">
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Restaurantes</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
 <section id="Inicio">
     <div id="textos_inicio">
-            <h1>QUER DESCOBRIR NOVAS PIZZARIAS PELA REGIÃO???</h1>
-            <h2>ESTÁ NO LUGAR CERTO!!!</h2>
+            <h1>FAÇA UMA RESERVA AGORA!</h1>
+            <div class="botoes">
+                <button class="botao-reservar">Reserve Uma mesa</button>
+                <button class="botao-cardapio">Cardápio</button>
+            </div>
     </div>
 </section>
 
 <h1>Criação de Cardápio</h1>
   
-<div class="form-container">
+<div class="formulario-container">
   <h2>Adicionar Novo Produto</h2>
-  <form id="productForm">
-    <label for="productName">Nome do Produto:</label>
-    <input type="text" id="productName" required>
+  <form id="formProduto">
+    <label for="nomeProduto">Nome do Produto:</label>
+    <input type="text" id="nomeProduto" required>
 
-    <label for="productDesc">Descrição:</label>
-    <textarea id="productDesc" required></textarea>
+    <label for="descProduto">Descrição:</label>
+    <textarea id="descProduto" required></textarea>
 
-    <label for="productPrice">Preço:</label>
-    <input type="text" id="productPrice" required>
+    <label for="precoProduto">Preço:</label>
+    <input type="text" id="precoProduto" required>
 
-    <label for="productImage">Imagem (URL):</label>
-    <input type="url" id="productImage" required>
+    <label for="imagemProduto">Imagem (URL):</label>
+    <input type="url" id="imagemProduto" required>
 
-    <button type="submit">Adicionar ao Cardápio</button>
+    <button id="botao" type="submit">Adicionar ao Cardápio</button>
   </form>
 </div>
 
-<div class="menu-container">
+<div class="cardapio-container">
   <h2>Cardápio</h2>
-  <div id="menu"></div>
+  <div id="cardapio"></div>
 </div>
 
+<section class="sobre-nos" id="sobrenos"> 
+    <div class="principal">
+        <div class="conteudo-sobre">
+            <h2>Sobre nós</h2>
+            <p>O PizzaFinder, desenvolvido por Matheus Forim e Davi Tavares, é uma plataforma inovadora projetada para reunir em um único espaço as melhores opções de cardápios de pizzarias. O site foi criado com o objetivo de simplificar a vida dos apaixonados por pizza, tornando a busca por sabores e promoções mais prática e eficiente. Com uma interface amigável e intuitiva, o PizzaFinder permite que os usuários explorem uma variedade de opções de pizzas, comparem ingredientes, descubram combinações exclusivas e aproveitem as ofertas mais atraentes da região.
 
-<section id="Sobre">
-    <h2>Sobre nós:</h2>
-    <p>O PizzaFinder, desenvolvido por Matheus Forim e Davi Tavares, é uma plataforma inovadora projetada para reunir em um único espaço as melhores opções de cardápios de pizzarias. O site foi criado com o objetivo de simplificar a vida dos apaixonados por pizza, tornando a busca por sabores e promoções mais prática e eficiente. Com uma interface amigável e intuitiva, o PizzaFinder permite que os usuários explorem uma variedade de opções de pizzas, comparem ingredientes, descubram combinações exclusivas e aproveitem as ofertas mais atraentes da região.
-
-        Além de ser uma ferramenta útil para encontrar a pizza perfeita para qualquer ocasião, o PizzaFinder também oferece informações detalhadas sobre as pizzarias, como horário de funcionamento, métodos de entrega, e avaliações de clientes. Quer você esteja planejando um jantar romântico, uma reunião de amigos ou apenas satisfazendo uma vontade de pizza, o PizzaFinder está aqui para tornar a sua escolha mais rápida e deliciosa.</p>
+                Além de ser uma ferramenta útil para encontrar a pizza perfeita para qualquer ocasião, o PizzaFinder também oferece informações detalhadas sobre as pizzarias, como horário de funcionamento, métodos de entrega, e avaliações de clientes. Quer você esteja planejando um jantar romântico, uma reunião de amigos ou apenas satisfazendo uma vontade de pizza, o PizzaFinder está aqui para tornar a sua escolha mais rápida e deliciosa.</p>
+        </div>     
+    </div>    
 </section>
 
-<script src="js/script.js"></script>
+<footer>
+    <div class="container">
+        <div class="conteudo-rodape">
+            <h3>Contato</h3>
+            <p>Email: pizzafinder@gmail.com</p>
+            <p>Telefone: +55 19 99559-0940</p>
+            <p>Endereço: Rua Amilton Rodrigues, nº 234</p>
+        </div>
+        <div class="conteudo-rodape">
+            <h3>Navegação</h3>
+            <ul class="lista">
+                <li><a href="">Início</a></li>
+                <li><a href="">Restaurantes</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+        <div class="conteudo-rodape">
+            <h3>Siga-nos</h3>
+            <ul class="icones-sociais">
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="barra-inferior">
+        <p>&copy; 2012 Criado por Davi Tavares e Matheus Forim</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
